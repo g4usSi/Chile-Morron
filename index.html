@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar estilos dinámicamente</title>
+    <script>
+        window.onload = function() {
+            const folder = 'styles'; // Carpeta donde están tus hojas de estilo
+            const styles = ['style1.css', 'style2.css', 'style3.css']; // Nombres de los archivos
+
+            styles.forEach(style => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = $;{CSS}/${style};
+                document.head.appendChild(link);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Mi sitio</h1>
+</body>
+</html>
